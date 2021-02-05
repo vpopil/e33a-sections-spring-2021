@@ -1,0 +1,3 @@
+!!! Please note that lateness policy is no longer 0.01% per minute as per section !!!
+
+For each minute that a project is turned in late, the course will impose a 0.1% deduction on your grade for the project. (Therefore, once a project is 16 hours and 40 minutes late it will earn no credit at all.) Late work will not be accepted for the final project.
