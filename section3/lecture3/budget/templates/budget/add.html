@@ -1,0 +1,11 @@
+{% extends "budget/layout.html" %}
+
+{% block body %}
+    <h1>Add Category</h1>
+    <form action="{% url 'budget:add' %}" method="post">
+        {% csrf_token %}
+        {{ form }}
+        <input type="submit">
+    </form>
+    <a href="{% url 'budget:index' %}">View All Tasks</a>
+{% endblock %}
