@@ -1,0 +1,22 @@
+{% extends "recipes/base.html" %}
+
+{% block title %}
+    Recipes
+{% endblock %}
+
+{% block body %}
+    <h1>Recipes</h1>
+
+    {% for recipe in recipes %}
+        <li>
+            <a href="{% url 'recipe' recipe.id %}">
+                Recipe: {{ recipe.name }}: {{ recipe.category }}
+            </a>
+        </li>
+    {% endfor %}
+
+
+    <a href="{% url 'ingredient' %}"> Add ingredient</a>
+
+
+{% endblock %}
