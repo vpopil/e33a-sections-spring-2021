@@ -1,0 +1,22 @@
+
+
+.car-entry {
+    border: 2px solid lightgreen;
+    cursor: pointer;
+    padding: 3px;
+    width: 100%;
+}
+
+.car-entry strong {
+    padding-right: 8px;
+}
+
+.car-year {
+    color: red;
+    float: right;
+}
+
+
+.lexus {
+    background-color: gold;
+}

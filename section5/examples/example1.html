@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                document.querySelector('#form').onsubmit = function() {
+                    event.preventDefault();
+
+                    const x = document.querySelector('#x').value;
+                    const y = document.querySelector('#y').value;
+
+                    // string parseInt()
+                    const z = parseInt(x) + parseInt(y);
+                    alert(`Total is ${z}!`);
+
+                    //return false;
+                };
+            });
+        </script>
+        <title>My simple calc</title>
+    </head>
+    <body>
+        <form id="form">
+            <input id="x" autocomplete="off" autofocus placeholder="x" type="number">
+            <input id="y" autocomplete="off" autofocus placeholder="y" type="number">
+            <input type="submit" value="add">
+        </form>
+    </body>
+</html>

@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Cars</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="{% static 'app/styles.css' %}">
+        <script src="{% static 'app/main.js' %}"></script>
+    </head>
+    <body>
+        <h3>Welcome to Cars app!</h3>
+
+        <button class="btn btn-sm btn-primary" id="main">Main</button>
+        <button class="btn btn-sm btn-primary" id="cars">Cars</button>
+
+
+        <div class="container">
+
+            <div id="main-view">
+                This is main view
+            </div>
+
+
+            <div id="cars-view">
+                This is cars view
+            </div>
+
+
+        </div>
+    </body>
+</html>

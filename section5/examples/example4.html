@@ -1,0 +1,54 @@
+<!-- example of building button in js -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+              document.querySelector('#new-button').onsubmit = () => {
+                
+                event.preventDefault();
+
+                // create li and button
+                const li = document.createElement('li');
+                const btn = document.createElement('button');
+                //btn.onclick = () => {alert("Button Clicked");}
+
+
+                // set class(es) of button
+                btn.classList.add('btn','btn-dark');
+
+                // set button label
+                btn.innerHTML = document.querySelector('#button-text').value;
+
+                // add button to the list item
+                // NOTE this could potentially be just set innerHTMLßßß
+                li.append(btn)
+
+                // append list item to the list
+                document.querySelector('#buttons').append(li);
+
+
+                //return false;
+                //
+              }
+
+            });
+        </script>
+        <title>Create buttons</title>
+    </head>
+    <body>
+      <ul style="list-style-type:none" id="buttons">
+      </ul>
+      <form id="new-button">
+          <input id="button-text" autocomplete="off" autofocus placeholder="New Button Name" type="text">
+          <input id="submit" type="submit">
+      </form>
+
+    </body>
+</html>
